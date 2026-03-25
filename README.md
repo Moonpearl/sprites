@@ -18,6 +18,10 @@ Also includes a custom screen named the [**Sprite Inspector**](#the-sprite-inspe
 
 </details>
 
+## Installation
+
+Download this package and extract it to your project's `images` folder, **or** clone this repository inside your `images` folder.
+
 ## Featured sprites
 
 - [Eileen](./eileen/)
