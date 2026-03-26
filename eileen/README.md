@@ -41,6 +41,7 @@ It can be used alongside any of the following attributes:
 - Outfits
   - `uniform` (default, will be used if outfit is omitted or reverted)
   - `winter`
+  - `yukata`
 - Faces
   - `smile` (default, will be used if face is omitted or reverted)
   - `cheerful`

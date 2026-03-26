@@ -16,6 +16,7 @@ define character_sprites.eileen.poses = (
 define character_sprites.eileen.outfits = (
     "uniform",
     "winter",
+    "yukata",
 )
 define character_sprites.eileen.faces = (
     "smile",
@@ -42,6 +43,7 @@ layeredimage eileen:
     group relaxed_outfit if_all ["relaxed"]:
         attribute uniform default Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/uniform.avif")
         attribute winter default Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/winter.avif")
+        attribute yukata default Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/yukata.avif")
 
     group relaxed_face if_all ["relaxed"]:
         attribute smile default null
@@ -61,6 +63,7 @@ layeredimage eileen:
     group thinking_outfit if_all ["thinking"]:
         attribute uniform default Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/uniform.avif")
         attribute winter default Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/winter.avif")
+        attribute yukata default Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/yukata.avif")
 
     group thinking_face if_all ["thinking"]:
         attribute smile default null
@@ -80,6 +83,7 @@ layeredimage eileen:
     group lecturing_outfit if_all ["lecturing"]:
         attribute uniform default Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/uniform.avif")
         attribute winter default Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/winter.avif")
+        attribute yukata default Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/yukata.avif")
      
     group lecturing_face if_all ["lecturing"]:
         attribute smile default null
