@@ -15,6 +15,7 @@ define character_sprites.eileen.poses = (
 )
 define character_sprites.eileen.outfits = (
     "uniform",
+    "winter",
 )
 define character_sprites.eileen.faces = (
     "smile",
@@ -40,6 +41,7 @@ layeredimage eileen:
     # Pose 1 - relaxed
     group relaxed_outfit if_all ["relaxed"]:
         attribute uniform default Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/uniform.avif")
+        attribute winter default Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/winter.avif")
 
     group relaxed_face if_all ["relaxed"]:
         attribute smile default null
@@ -58,6 +60,7 @@ layeredimage eileen:
     # Pose 2 - thinking
     group thinking_outfit if_all ["thinking"]:
         attribute uniform default Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/uniform.avif")
+        attribute winter default Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/winter.avif")
 
     group thinking_face if_all ["thinking"]:
         attribute smile default null
@@ -76,6 +79,7 @@ layeredimage eileen:
     # Pose 3 - lecturing
     group lecturing_outfit if_all ["lecturing"]:
         attribute uniform default Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/uniform.avif")
+        attribute winter default Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/winter.avif")
      
     group lecturing_face if_all ["lecturing"]:
         attribute smile default null
