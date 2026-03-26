@@ -1,3 +1,5 @@
+define current_outfit = "uniform"
+
 label demo_sprite_eileen:
     show eileen with dissolve
     eileen "You've created a new Ren'Py game."
@@ -23,9 +25,85 @@ label demo_sprite_eileen:
     
     eileen "I think getting that makeover was the best decision I've made in a long time!"
     show eileen lecturing cheerful with dissolve
-    eileen "Look! I've got so many facial expressions now!"
+    eileen "Look! I've got so many different outfits now!"
+    eileen "What outfit do you want me to show you?"
+    call demo_sprite_eileen_outfit_loop
 
-    jump demo_sprite_eileen_emotion_loop
+    show eileen lecturing cheerful with dissolve
+    eileen "Älright! I've got so many facial expressions too!"
+    call demo_sprite_eileen_emotion_loop
+    
+    hide eileen with dissolve
+    return
+
+label demo_sprite_eileen_change_outfit:
+    show eileen cheerful with dissolve
+    eileen "Alright, give me a minute to change…"
+    hide eileen with dissolve
+    "*Shuffle* *shuffle*…"
+    return
+
+label demo_sprite_eileen_outfit_loop:
+    menu:
+        eileen "What outfit do you want me to show you?"
+        "Your formal wear":
+            if current_outfit == "uniform":
+                show eileen thinking neutral with dissolve
+                eileen "This is what I'm wearing already…"
+            else:
+                call demo_sprite_eileen_change_outfit
+                show eileen thinking uniform with dissolve
+                eileen "Alright! Back to work!"
+                $ current_outfit = "uniform"
+        "Something casual":
+            if current_outfit == "casual":
+                show eileen thinking neutral with dissolve
+                eileen "This is what I'm wearing already…"
+            else:
+                call demo_sprite_eileen_change_outfit
+                show eileen lecturing casual cheerful with dissolve
+                eileen "Here! This is what I wear to fo out with friends!"
+                $ current_outfit = "casual"
+        "What you wear in bed":
+            if current_outfit == "night":
+                show eileen thinking neutral with dissolve
+                eileen "This is what I'm wearing already…"
+            else:
+                call demo_sprite_eileen_change_outfit
+                show eileen relaxed night serious with dissolve
+                eileen "I don't want to go to bed yet, though…"
+                $ current_outfit = "night"
+        "A swimsuit":
+            if current_outfit == "swimsuit":
+                show eileen thinking neutral with dissolve
+                eileen "This is what I'm wearing already…"
+            else:
+                call demo_sprite_eileen_change_outfit
+                show eileen relaxed swimsuit uneasy with dissolve
+                eileen "I'm a bit shy to wear that in front of you…"
+                $ current_outfit = "swimsuit"
+        "Something warm":
+            if current_outfit == "winter":
+                show eileen neutral with dissolve
+                eileen "This is what I'm wearing already…"
+            else:
+                call demo_sprite_eileen_change_outfit
+                show eileen lecturing winter with dissolve
+                eileen "You're right, it's so cold outside!"
+                $ current_outfit = "winter"
+        "Something exotic":
+            if current_outfit == "yukata":
+                show eileen neutral with dissolve
+                eileen "This is what I'm wearing already…"
+            else:
+                call demo_sprite_eileen_change_outfit
+                show eileen thinking yukata moved with dissolve
+                eileen "I bought this on my last trip to Japan! Cute, right?"
+                $ current_outfit = "yukata"
+        "Keep your current outfit":
+            return
+    
+    jump demo_sprite_eileen_outfit_loop
 
 label demo_sprite_eileen_emotion_loop:
     menu:
@@ -65,9 +143,7 @@ label demo_sprite_eileen_emotion_loop:
         "I'm leaving. I don't like visual novels anyways.":
             show eileen sad with dissolve
             eileen "That's so mean…"
-            hide eileen with dissolve
             return
     
     jump demo_sprite_eileen_emotion_loop
     
-
