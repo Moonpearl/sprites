@@ -41,6 +41,7 @@ It can be used alongside any of the following attributes:
 - Outfits
   - `uniform` (default, will be used if outfit is omitted or reverted)
   - `casual`
+  - `swimsuit`
   - `winter`
   - `yukata`
 - Faces
@@ -60,6 +61,6 @@ It can be used alongside any of the following attributes:
 **Examples:**
 
 - `show eileen thinking` will display Eileen, changing her pose to thinking, keeping her current face and outfit.
-- `show eileen winter` will display Eileen, changing her current outfit to winter, keeping her current pose and face.
+- `show eileen casual` will display Eileen, changing her current outfit to casual, keeping her current pose and face.
 - `show eileen cheerful` will display Eileen, changing her face to cheerful, keeping her current pose and outfit.
 - `show eileen thinking cheerful` will display Eileen, changing her pose to thinking and her face to cheerful, keeping her current outfit.
