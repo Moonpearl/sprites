@@ -16,6 +16,7 @@ define character_sprites.eileen.poses = (
 define character_sprites.eileen.outfits = (
     "uniform",
     "casual",
+    "night",
     "swimsuit",
     "winter",
     "yukata",
@@ -45,6 +46,7 @@ layeredimage eileen:
     group relaxed_outfit if_all ["relaxed"]:
         attribute uniform default Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/uniform.avif")
         attribute casual Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/casual.avif")
+        attribute night Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/night.avif")
         attribute swimsuit Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/swimsuit.avif")
         attribute winter Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/winter.avif")
         attribute yukata Crop(character_sprites.eileen.regions["relaxed"], "sprites/eileen/outfit/yukata.avif")
@@ -67,6 +69,7 @@ layeredimage eileen:
     group thinking_outfit if_all ["thinking"]:
         attribute uniform default Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/uniform.avif")
         attribute casual Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/casual.avif")
+        attribute night Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/night.avif")
         attribute swimsuit Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/swimsuit.avif")
         attribute winter Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/winter.avif")
         attribute yukata Crop(character_sprites.eileen.regions["thinking"], "sprites/eileen/outfit/yukata.avif")
@@ -89,6 +92,7 @@ layeredimage eileen:
     group lecturing_outfit if_all ["lecturing"]:
         attribute uniform default Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/uniform.avif")
         attribute casual Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/casual.avif")
+        attribute night Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/night.avif")
         attribute swimsuit Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/swimsuit.avif")
         attribute winter Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/winter.avif")
         attribute yukata Crop(character_sprites.eileen.regions["lecturing"], "sprites/eileen/outfit/yukata.avif")

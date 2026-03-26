@@ -41,6 +41,7 @@ It can be used alongside any of the following attributes:
 - Outfits
   - `uniform` (default, will be used if outfit is omitted or reverted)
   - `casual`
+  - `night`
   - `swimsuit`
   - `winter`
   - `yukata`
