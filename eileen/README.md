@@ -40,6 +40,7 @@ It can be used alongside any of the following attributes:
   - `lecturing`
 - Outfits
   - `uniform` (default, will be used if outfit is omitted or reverted)
+  - `casual`
   - `winter`
   - `yukata`
 - Faces
